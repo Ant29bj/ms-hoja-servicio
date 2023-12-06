@@ -16,86 +16,84 @@ import sekai.mshojaservicio.enums.DetalleServicio;
 @Setter
 @Slf4j
 public class HojaServicio {
-    @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Long id;
+  @Id @GeneratedValue(strategy = GenerationType.IDENTITY) private Long id;
 
-    @Column(unique = true,nullable = false)
-    private String noOrden;
+  @Column(unique = true, nullable = false)
+  private String noOrden;
 
-    private String zona;
+  private String empresa;
 
-    private String agencia;
+  private String zona;
 
-    private String fecha;
+  private String agencia;
 
-    private String horaInicio;
+  private String fecha;
 
-    private String horaTermino;
+  private String horaInicio;
 
-    private String noEquipo;
+  private String horaTermino;
 
-    private String noEquipoSerie;
+  private String noEquipo;
 
-    private String noInventario;
+  private String noEquipoSerie;
 
-    private Boolean verificarComunicacionMonitoreo;
+  private String noInventario;
 
-    private Boolean verificarComunicacionSicom;
+  private Boolean verificarComunicacionMonitoreo;
 
-    private Boolean preubasAceptacionBilletes;
+  private Boolean verificarComunicacionSicom;
 
-    private String preubasAceptacionBilletesDesc;
+  private Boolean preubasAceptacionBilletes;
 
-    private Boolean pruebasDispensadoMonedas;
+  private String preubasAceptacionBilletesDesc;
 
-    private String pruebasDispensadoMonedasDesc;
+  private Boolean pruebasDispensadoMonedas;
 
-    private Boolean preubasDispensadoBilletes;
+  private String pruebasDispensadoMonedasDesc;
 
-    private String pruebasDispensadoBilletesDesc;
+  private Boolean preubasDispensadoBilletes;
 
-    private Boolean pruebasImpresion;
+  private String pruebasDispensadoBilletesDesc;
 
-    private String diagnosticoFallas;
+  private Boolean pruebasImpresion;
 
-    private Boolean mantenimientoGabinete;
+  private String diagnosticoFallas;
 
-    private Boolean organizacionEstadoCableado;
+  private Boolean mantenimientoGabinete;
 
-    private Boolean mantenimientoPc;
+  private Boolean organizacionEstadoCableado;
 
-    private Boolean mantenimientoMonitor;
+  private Boolean mantenimientoPc;
 
-    private Boolean mantenimientoEscaner;
+  private Boolean mantenimientoMonitor;
 
-    private Boolean mantenimientoImpresora;
+  private Boolean mantenimientoEscaner;
 
-    private Boolean mantenimientoTarjetaInterfaz;
+  private Boolean mantenimientoImpresora;
 
-    private Boolean mantenimientoToneleros;
+  private Boolean mantenimientoTarjetaInterfaz;
 
-    private Boolean mantenimientoDispensadorBilletes;
+  private Boolean mantenimientoToneleros;
 
-    private Boolean mantenimientoAceptadorBilletes;
+  private Boolean mantenimientoDispensadorBilletes;
 
-    private Boolean mantenimientoAceptadorMonedas;
+  private Boolean mantenimientoAceptadorBilletes;
 
-    // pendiente revision Ups
+  private Boolean mantenimientoAceptadorMonedas;
 
-    private String observaciones;
+  // pendiente revision Ups
 
-    private String verificacionUltimaVersionLiberada;
+  private String observaciones;
 
-    private Boolean actualizacionAntivirusCorporativo;
+  private String verificacionUltimaVersionLiberada;
 
-    private Boolean verificaFechaHora;
+  private Boolean actualizacionAntivirusCorporativo;
 
-    private Boolean aceptaMantenimiento;
+  private Boolean verificaFechaHora;
 
-    @Enumerated(EnumType.STRING)
-    private DetalleServicio detalleServicio;
+  private Boolean aceptaMantenimiento;
 
-    @Enumerated(EnumType.STRING)
-    private CalidadServicio calidadServicio;
+  @Enumerated(EnumType.STRING) private DetalleServicio detalleServicio;
+
+  @Enumerated(EnumType.STRING) private CalidadServicio calidadServicio;
 }

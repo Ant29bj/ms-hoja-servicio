@@ -22,7 +22,7 @@ public class HojaServicioController {
     @GetMapping
     private ResponseEntity<HojaServicio> buscarHojaServicio(@RequestParam(name = "noOrden") String noOrden){
         Optional<HojaServicio> hojaServicioOptional = hojaServicioService.obtenerHoja(noOrden);
-        return hojaServicioOptional.map(hoja -> ResponseEntity.ok(hoja)).orElse(ResponseEntity.notFound().build());
+        return hojaServicioOptional.map(ResponseEntity::ok).orElse(ResponseEntity.notFound().build());
     }
 
     @GetMapping("/all")
