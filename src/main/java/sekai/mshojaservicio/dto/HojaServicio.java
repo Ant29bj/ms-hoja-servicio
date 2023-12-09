@@ -39,9 +39,9 @@ public class HojaServicio {
 
   private String noInventario;
 
-  private String preventivoCompleto;
+  private Boolean preventivoCompleto;
 
-  private String correctivo;
+  private Boolean correctivo;
 
   private Boolean verificarComunicacionMonitoreo;
 
