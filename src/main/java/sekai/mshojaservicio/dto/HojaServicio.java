@@ -86,6 +86,9 @@ public class HojaServicio {
   private Boolean mantenimientoAceptadorMonedas;
 
   // pendiente revision Ups
+  @OneToOne(cascade = CascadeType.ALL)
+  @JoinColumn(name = "ups_id")
+  private Ups ups;
 
   private String observaciones;
 
