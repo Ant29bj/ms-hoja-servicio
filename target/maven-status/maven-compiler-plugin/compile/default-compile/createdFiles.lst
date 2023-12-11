@@ -1,11 +1,12 @@
-sekai/mshojaservicio/services/impl/HojaServicioServiceImpl.class
 sekai/mshojaservicio/config/WebConfig.class
 sekai/mshojaservicio/dto/Voltajes.class
 sekai/mshojaservicio/enums/DetalleServicio.class
 sekai/mshojaservicio/controller/HojaServicioController.class
 sekai/mshojaservicio/services/HojaServicioService.class
+sekai/mshojaservicio/dto/HojaServicio.class
+sekai/mshojaservicio/enums/CalidadServicio.class
+sekai/mshojaservicio/services/impl/HojaServicioServiceImpl.class
 sekai/mshojaservicio/dto/Ups.class
 sekai/mshojaservicio/MsHojaServicioApplication.class
-sekai/mshojaservicio/dto/HojaServicio.class
+sekai/mshojaservicio/dto/Refaciones.class
 sekai/mshojaservicio/repository/HojaServicioRepository.class
-sekai/mshojaservicio/enums/CalidadServicio.class

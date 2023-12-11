@@ -5,6 +5,7 @@
 /home/sekai/workspace/java/ms-hoja-servicio/src/main/java/sekai/mshojaservicio/enums/CalidadServicio.java
 /home/sekai/workspace/java/ms-hoja-servicio/src/main/java/sekai/mshojaservicio/services/impl/HojaServicioServiceImpl.java
 /home/sekai/workspace/java/ms-hoja-servicio/src/main/java/sekai/mshojaservicio/services/HojaServicioService.java
+/home/sekai/workspace/java/ms-hoja-servicio/src/main/java/sekai/mshojaservicio/dto/Refaciones.java
 /home/sekai/workspace/java/ms-hoja-servicio/src/main/java/sekai/mshojaservicio/dto/Voltajes.java
 /home/sekai/workspace/java/ms-hoja-servicio/src/main/java/sekai/mshojaservicio/repository/HojaServicioRepository.java
 /home/sekai/workspace/java/ms-hoja-servicio/src/main/java/sekai/mshojaservicio/controller/HojaServicioController.java

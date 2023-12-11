@@ -1,5 +1,6 @@
 package sekai.mshojaservicio.dto;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
@@ -9,6 +10,10 @@ import lombok.extern.slf4j.Slf4j;
 import sekai.mshojaservicio.enums.CalidadServicio;
 import sekai.mshojaservicio.enums.DetalleServicio;
 
+import java.util.ArrayList;
+import java.util.LinkedList;
+import java.util.List;
+
 @Entity
 @AllArgsConstructor
 @NoArgsConstructor
@@ -16,7 +21,10 @@ import sekai.mshojaservicio.enums.DetalleServicio;
 @Setter
 @Slf4j
 public class HojaServicio {
-  @Id @GeneratedValue(strategy = GenerationType.IDENTITY) private Long id;
+  @Id
+  @GeneratedValue(strategy = GenerationType.IDENTITY)
+  @JsonIgnore
+  private Long id;
 
   @Column(unique = true, nullable = false)
   private String noOrden;
@@ -89,6 +97,9 @@ public class HojaServicio {
   @OneToOne(cascade = CascadeType.ALL)
   @JoinColumn(name = "ups_id")
   private Ups ups;
+
+  @OneToMany(cascade = CascadeType.ALL)
+  private List<Refaciones> refaciones;
 
   private String observaciones;
 
