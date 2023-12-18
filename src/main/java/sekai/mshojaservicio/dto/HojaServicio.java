@@ -57,6 +57,8 @@ public class HojaServicio {
 
   private Boolean preubasAceptacionBilletes;
 
+  private Boolean pruebasAceptadorMonedas;
+
   private String preubasAceptacionBilletesDesc;
 
   private Boolean pruebasDispensadoMonedas;
