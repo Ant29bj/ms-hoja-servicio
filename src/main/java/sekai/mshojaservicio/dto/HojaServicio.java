@@ -103,6 +103,8 @@ public class HojaServicio {
 
   private String observaciones;
 
+  private Boolean estadoVerificacionUltimaVersionLiberada;
+
   private String verificacionUltimaVersionLiberada;
 
   private Boolean actualizacionAntivirusCorporativo;

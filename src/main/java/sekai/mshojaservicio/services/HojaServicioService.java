@@ -13,4 +13,6 @@ public interface HojaServicioService {
     public HojaServicio agregarServicio(HojaServicio hojaServicio);
 
     public  String generarNoOrden(String noEquipo);
+
+    public HojaServicio actualizarHoja(HojaServicio hojaServicio);
 }

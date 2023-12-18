@@ -45,4 +45,16 @@ public class HojaServicioController {
             return new ResponseEntity<>(e.getMessage(), HttpStatus.BAD_REQUEST);
         }
     }
+
+    @PutMapping
+    @PatchMapping
+    private ResponseEntity<Object> actualizarHoja(@RequestBody HojaServicio hojaServicio) {
+        try {
+            HojaServicio hojaActualizada = hojaServicioService.actualizarHoja(hojaServicio);
+            return new ResponseEntity<>(hojaActualizada, HttpStatus.OK);
+        } catch (IllegalArgumentException e) {
+            return new ResponseEntity<>(e.getMessage(), HttpStatus.NOT_FOUND);
+        }
+    }
+
 }
